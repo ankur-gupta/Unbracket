@@ -4,7 +4,7 @@ A plugin for [Sublime Text 3](https://www.sublimetext.com/3) that allows you to 
 
 Unbracket's behavior is similar to [ParentalControl](https://github.com/ilyakam/ParentalControl) but not exactly the same. Unbracket removes curly brackets, square brackets, or parentheses in a slightly different way. See the GIF below to see this in effect.
 
-![Demo GIF]()
+![Demo GIF](https://user-images.githubusercontent.com/7110058/29059559-fd25a4ea-7bca-11e7-9ccb-19d40377b917.gif)
 
 
 ## Features
