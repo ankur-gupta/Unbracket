@@ -1,6 +1,9 @@
 import sublime
 import sublime_plugin
 
+# Quote specifications
+QUOTES = ['"', "'"]
+
 
 class RemoveParenthesesCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -15,16 +18,13 @@ class RemoveParenthesesCommand(sublime_plugin.TextCommand):
         # Bracket specification
         bracket = '()'
 
-        # Quote specification
-        quote = '"'
-
         # Search for first occurrence of bracket start
-        quote_active = False
+        qoutes = {qoute: False for qoute in QUOTES}
         for index, character in enumerate(string):
-            if character == quote:
-                quote_active = not quote_active
+            if character in qoutes:
+                qoutes[character] = not qoutes[character]
                 continue
-            if quote_active:
+            if any([active for active in qoutes.values()]):
                 continue
             if character == bracket[0]:
                 parentheses_start_index = index
@@ -45,12 +45,12 @@ class RemoveParenthesesCommand(sublime_plugin.TextCommand):
         assert parentheses_start_index < len(string)
         parentheses_end_index = None
         count = 1
-        quote_active = False
+        qoutes = {qoute: False for qoute in QUOTES}
         for index in range(parentheses_start_index + 1, len(string)):
-            if string[index] == quote:
-                quote_active = not quote_active
+            if string[index] in qoutes:
+                qoutes[string[index]] = not qoutes[string[index]]
                 continue
-            if quote_active:
+            if any([active for active in qoutes.values()]):
                 continue
             if string[index] == bracket[0]:
                 count = count + 1
