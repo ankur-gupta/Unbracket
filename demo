@@ -1,0 +1,17 @@
+# R code
+inherits(dots, c("lazy", "formula")))
+seq_len(length(variable))
+
+"he(llo"("quote containing) unbalanced bracket works")
+'he(llo'("quote containing) unbalanced bracket works")
+'he(llo'('quote containing) unbalanced bracket works')
+"he(llo"('quote containing) unbalanced bracket works')
+
+variable[dataframe$column[1]$"something"](more$symbols)
+seq_len(length("balanced 'nested quotes' work"))
+
+
+# Python code
+dataframe[column[3]]
+sum((1 for _ in xrange(100)))
+list_of_things = [[item] for item in list_of_items]
