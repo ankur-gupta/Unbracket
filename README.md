@@ -12,6 +12,19 @@ Unbracket's behavior is similar to [ParentalControl](https://github.com/ilyakam/
 2. Unbracket recognizes `"` and `'` as quote characters and works correctly even when the expression contains balanced, possibly nested quotes. For unbalanced, nested quotes, see Known Limitations section below.
 3. Unbracket was designed to work with R and Python code but may work with other programming languages too. 
 
+## Installation
+Unbracket is not yet available on Sublime Package Manager. You can simply clone the repository inside `Packages` folder.
+
+```
+# MacOS
+cd ~/Library/Application Support/Sublime\ Text\ 3/Packages
+git clone git@github.com:ankur-gupta/unbracket.git
+
+# Linux
+cd ~/.config/sublime-text-3/Packages
+git clone git@github.com:ankur-gupta/unbracket.git
+```
+
 ## Usage 
 Unbracket comes with these default key bindings out of the box but you can change them.
 
