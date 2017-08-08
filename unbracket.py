@@ -94,6 +94,10 @@ class UnbracketCommand(sublime_plugin.TextCommand):
                                               bracket_open_position,
                                               bracket)
 
+        if bracket_close_position is None:
+            print('Cannot find bracket close position. Exiting!')
+            return
+
         # Hard part is done.
         region_to_be_replaced = \
             self._get_region_to_be_replaced(operating_region,
