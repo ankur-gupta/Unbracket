@@ -18,11 +18,11 @@ Unbracket is not yet available on Sublime Package Manager. You can simply clone 
 ```
 # MacOS
 cd ~/Library/Application Support/Sublime\ Text\ 3/Packages
-git clone git@github.com:ankur-gupta/unbracket.git
+git clone git@github.com:ankur-gupta/Unbracket.git
 
 # Linux
 cd ~/.config/sublime-text-3/Packages
-git clone git@github.com:ankur-gupta/unbracket.git
+git clone git@github.com:ankur-gupta/Unbracket.git
 ```
 
 ## Usage 
