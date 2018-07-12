@@ -1,6 +1,6 @@
 # Unbracket - A Sublime Text 3 Plugin
 
-A plugin for [Sublime Text 3](https://www.sublimetext.com/3) that allows you to `unbracket`, i.e. remove curly brackets, square brackets, or parentheses within current selection or current line. 
+A plugin for [Sublime Text 3](https://www.sublimetext.com/3) that allows you to `unbracket`, i.e. remove curly brackets, square brackets, or parentheses within current selection or current line.
 
 Unbracket's behavior is similar to [ParentalControl](https://github.com/ilyakam/ParentalControl) but not exactly the same. Unbracket removes curly brackets, square brackets, or parentheses in a slightly different way. See the GIF below to see this in effect.
 
@@ -10,22 +10,22 @@ Unbracket's behavior is similar to [ParentalControl](https://github.com/ilyakam/
 ## Features
 1. Unbracket attempts to be safe, which means, if no matching brackets are found, Unbracket does nothing.
 2. Unbracket recognizes `"` and `'` as quote characters and works correctly even when the expression contains balanced, possibly nested quotes. For unbalanced, nested quotes, see Known Limitations section below.
-3. Unbracket was designed to work with R and Python code but may work with other programming languages too. 
+3. Unbracket was designed to work with R and Python code but may work with other programming languages too.
 
 ## Installation
 Unbracket is not yet available on Sublime Package Manager. You can simply clone the repository inside `Packages` folder.
 
 ```
 # MacOS
-cd ~/Library/Application Support/Sublime\ Text\ 3/Packages
-git clone git@github.com:ankur-gupta/Unbracket.git
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+git clone https://github.com/ankur-gupta/Unbracket.git
 
 # Linux
 cd ~/.config/sublime-text-3/Packages
-git clone git@github.com:ankur-gupta/Unbracket.git
+git clone https://github.com/ankur-gupta/Unbracket.git
 ```
 
-## Usage 
+## Usage
 Unbracket comes with these default key bindings out of the box but you can change them.
 
 **MacOS**: `Command+Shift+[` to unbracket
